@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/assessment.css">
+    <title>Assessment</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="main-heading">
+            <p id="heading" style="color: white;">Online Quiz</p>
+        </div>
+        <div id="main-container">
+            <div id="time-container" style="color: darkorchid;"><span id="time"></span> </div>
+
+            <div id="question-container">
+                <div id="question"> Q.1 what is your question ?
+                </div>
+                <div id="options">
+                    <div class="radio">
+                        <input type="radio" name="optradio" value="1">
+                        <label class="OptionsText"><span id="opt1">option1</span></label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="optradio" value="2">
+                        <label class="OptionsText"><span id="opt2">option1</span></label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="optradio" value="3">
+                        <label class="OptionsText"><span id="opt3">option1</span></label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="optradio" value="4">
+                        <label class="OptionsText"><span id="opt4">option1</span></label>
+                    </div>
+                    <div id="next-button">
+                        <button id="nextButton" class="next-btn" onclick="loadNextQuestion();">Next</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/assessment.js"></script>
+</body>
+
+</html>

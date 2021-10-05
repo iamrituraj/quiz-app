@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/instructions.css">
+    <title>Instructions</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="main-container">
+            <div class="section1">
+                <p id="heading">Instructions</p>
+                <ol>
+                    <li id="timelimit">Total duration of test is 180 seconds.</li>
+                    <li>Test comprise of MCQs only.</li>
+                    <li id="eachque">Each question is of 1 Mark.</li>
+                     <li>No Negative Marking.</li>
+                    <li> There will be only 10 questions.</li>
+                    <li>To start the test click on "Start" button.</li>
+                    <li>Once the time is finished, test will be submitted automatically.</li>
+                    <li>You can see your score at the time of submission.</li>
+                </ol>
+                <div class="wish-text">
+
+                    <button id="starttest"><a href="assessment-page.html">Start</a> </button>
+                </div>
+            </div>
+            <div class="section2">
+                <img src="img/start.jpg" alt="">
+            </div>
+
+        </div>
+    </div>
+    <script>
+
+        var queryString = decodeURIComponent(window.location.search); //parsing
+        queryString = queryString.substring(1);
+        document.getElementById("eachque").innerHTML="There will be only "+queryString.split("&")[1].substr(1,queryString.split("&")[1].length)+" questions.";
+        document.getElementById("timelimit").innerHTML="Total duration of this test is "+queryString.split("&")[3].substr(1,queryString.split("&")[3].length);
+        document.getElementById("starttest").onclick=function(){
+
+
+        window.location.href = "assessment-page.html?"+queryString;
+
+            // window.location.href="assessment-page.html?fd=fd";
+        }
+    </script>
+
+</body>
+
+</html>

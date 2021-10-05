@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&family=Roboto:wght@400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'arial',
+        sans-serif;
+    font-family: 'arial',
+        cursive;
+}
+
+body {
+    background: url("../img/abc.jpg") no-repeat center;
+    color: white;
+    background-size: 120% 120vh;
+}
+
+#container {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.question-section {
+    width: 80%;
+    height: 600px;
+}
+
+#heading {
+    font-size: 50px;
+    margin: 20px;
+    border: 0;
+    padding: 5px;
+    width: 100vw;
+    background: #000000;
+}
+
+.login-section {
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    height: 500px;
+    margin: 20px;
+}
+
+#main-image {
+    width: 55%;
+    height: 100%;
+}
+
+
+#login {
+    width: 45%;
+    height: 100%;
+}
+
+img {
+    height: 90%;
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+#main-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-right: 10%;
+}
+
+#login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contactForm {
+    display: flex;
+    background-color: #00000066;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 10px;
+    height: 56vh;
+    width: 28vw;
+
+}
+#admin-button {
+    margin: 1em;
+    padding:5px;
+    background-color:#432374;
+    width:9vw;
+    color: white;
+    border: 1px ;
+    border-radius: 4px;
+    font-size:1rem;
+    cursor: pointer;
+
+}
+
+#start-test-button{
+    margin: 1em;
+    padding:5px;
+    background-color:#432374;
+    width:9vw;
+    color: white;
+    border: 1px ;
+    border-radius: 4px;
+    font-size:1rem;
+    cursor: pointer;
+}
+
+
+label {
+    font-size: 1.7em;
+
+}
+
+input {
+    font-size: 1.3em;
+    width: 75%;
+    height: 45px;
+    border: 0;
+    border-radius: 10px;
+    margin: 1.5em;
+    padding: 10px;
+}
+
+input:hover,
+input:focus,
+input:active {
+    /* outline: none !important; */
+    /* border: none !important; */
+    /* box-shadow: none; */
+    color: black;
+}
+
+
+#submit-button {
+    background: skyblue;
+    width: 100px;
+    padding: 10px;
+    height: 45px;
+    font-size: 20px;
+    border: 0;
+    border-radius: 10px;
+}
+
+#submit-button:hover {
+    background-color: rgb(86, 191, 223);
+}
+
+/* mobile css */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 1050px) {
+    .login-section {
+        width: 800px;
+    }
+
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 832px) {
+    .login-section {
+        width: 600px;
+    }
+
+    #heading {
+        font-size: 30px;
+    }
+
+    #main-image,
+    #login {
+        width: 100%;
+    }
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
+
+    #contactForm {
+        height: 60%;
+    }
+}
+
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 650px) {
+
+    .login-section {
+        width: 400px;
+        flex-direction: column;
+    }
+
+    #login {
+        height: 80vh;
+    }
+
+    img {
+        height: 70%;
+    }
+
+    #contactForm {
+        height: 100%;
+        margin: 0 10px 0 10px;
+    }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 420px) {
+
+
+    #main-image {
+        width: 80%;
+        height: 80%;
+        margin-right: 0;
+    }
+
+    .login-section {
+        justify-content: center;
+        align-items: center;
+    }
+
+    #login {
+        width: 80%;
+
+    }
+}
