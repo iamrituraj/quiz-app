@@ -1,24 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&family=Roboto:wght@400;500&display=swap');
-.img{
+
+.img {
     align-items: center;
     justify-items: center;
     margin-left: -30%;
 }
-body{
-      display:flex;
-      justify-content: space-between;
-      background: url("../img/abc.jpg");
-      
+
+body {
+    display: flex;
+    justify-content: space-between;
+    background: url("../img/abc.jpg");
+
 }
+
 /* font-family: 'Roboto', sans-serif;
 font-family: 'Oswald', sans-serif; */
-.Feadback{
+.Feadback {
     display: flex;
     justify-content: center;
     align-items: center;
-   background-color: #006b38ff;
-   color: white;
-    font-family: 'Merienda','Times New Roman', Times, serif;
+    background-color: transparent;
+    color: white;
+    font-family: 'Merienda', 'Times New Roman', Times, serif;
     width: 40vw;
     /* height  */
     margin-top: 7vw;
@@ -26,45 +29,54 @@ font-family: 'Oswald', sans-serif; */
     margin-left: 33%;
     border-radius: 8%;
 }
+
 form h2 {
     padding: 3.5vw;
-        padding-left: 3.5vw;
+    padding-left: 3.5vw;
     margin: auto;
     padding-left: 6vw;
     font-size: 49px;
 }
-.email{
-    display:flex;
+
+.email {
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding:1vw;
+    padding: 1vw;
 }
-.email p{
+
+.email p {
     margin: 1vh;
-    font-size:32px;
+    font-size: 32px;
 }
-input[type="text"] , input[type="email"],input[type="int"]{
+
+input[type="text"],
+input[type="email"],
+input[type="int"] {
     margin: 2vh;
     height: 2vw;
-    width:20vw;
+    width: 20vw;
     padding: 1vh;
     font-size: 30px;
-
+    font-size: 20px;
+    outline: none;
 }
-.button{
+
+.button {
     margin: 1em;
-    padding:10px;
-    background-color: black;
-    width:22vw;
+    padding: 10px;
+    background-color: #f2aa4cff;
+    width: 15vw;
     color: white;
-    border: 1px ;
+    border: 1px;
     border-radius: 6px;
-    font-size:1.23rem;
+    font-size: 1.23rem;
     cursor: pointer;
 }
-.function{
-    display:flex;
+
+.function {
+    display: flex;
     justify-content: center;
 }
 
@@ -74,7 +86,7 @@ input[type="text"] , input[type="email"],input[type="int"]{
 @media only screen and (min-device-width: 375px) and (max-device-width: 1130px) {
 
 
-   form h2 {
+    form h2 {
         font-size: 30px;
     }
 
@@ -86,32 +98,33 @@ input[type="text"] , input[type="email"],input[type="int"]{
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 710px) {
 
-#body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+    #body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
-.img {
-    width: 80%;
-    margin: 5%;
-}
-.Feadback {
-    margin: 5%;
-}
+    .img {
+        width: 80%;
+        margin: 5%;
+    }
 
-form h2 {
-    font-size: 20px;
-}
+    .Feadback {
+        margin: 5%;
+    }
 
-#email {
-    font-size: 15px;
-}
+    form h2 {
+        font-size: 20px;
+    }
 
-input[type="email"] {
-    margin-top: 10px;
-    height: 5px;
-    width: 75px;
-}
+    #email {
+        font-size: 15px;
+    }
+
+    input[type="email"] {
+        margin-top: 10px;
+        height: 5px;
+        width: 75px;
+    }
 }

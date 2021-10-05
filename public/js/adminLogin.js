@@ -3,6 +3,7 @@ let correctotp;
 
 function otp_set(otp) {
     correctotp = otp;
+    console.log(correctotp);
 }
 
 async function email_send(email) {
