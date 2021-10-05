@@ -11,7 +11,7 @@
 }
 
 body {
-    background: url("../img/back.jpg");
+    background: url("../img/abc.jpg");
     width: 100vw;
     height: 100vh;
 
@@ -39,7 +39,7 @@ body {
     width: 1100px;
     height: 550px;
     border-radius: 25px;
-    background: url("../img/back.jpg");
+    background: url(data:image/jpeg;base64,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);
     padding: 1em;
     margin-top: 1em;
     display: flex;
@@ -63,19 +63,19 @@ body {
 #question-container {
     width: 800px;
     height: 400px;
-    background: black;
+    background: transparent;
     margin-top: 1em;
     border-radius: 2em;
     border: 0.1px;
     align-items: center;
-    border-color: black;
+    border-color: white;
     border-style: solid;
     opacity: 0.92;
 }
 
 
 #question {
-    background: black;
+    background: transparent;
     width: 800px;
     font-size: 1.6em;
     padding: 0.4em;
@@ -121,7 +121,7 @@ button {
     padding: 0.3em;
     font-size: 20px;
     border-radius: 10px;
-    background: crimson;
+    background: #f2aa4cff;
     color: white;
     border: 0;
     cursor: pointer;

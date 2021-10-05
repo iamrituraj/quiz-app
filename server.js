@@ -8,21 +8,21 @@ var nodemailer = require('nodemailer');
 
 var val = Math. floor(1000 + Math. random() * 9000);
 
-var transporter = nodemailer.createTransport({
-  service: 'gmail',
-  auth: {
-    user: 'mcqappmail@gmail.com',
-    pass: process.env.password_mail
-  }
-});
+// var transporter = nodemailer.createTransport({
+//   service: 'gmail',
+//   auth: {
+//     user: 'mcqappmail@gmail.com',
+//     pass: process.env.password_mail
+//   }
+// });
 
-var mailOptions = {
-  from: 'mcqappmail@gmail.com',
-  to: 'mradul8668@gmail.com',
-  subject: 'Sending Email using Node.js',
-  text: `Hi Your login otp is `+val
-  // html: '<h1>Hi Smartherd</h1><p>Your Messsage</p>'        
-};
+// var mailOptions = {
+//   from: 'mcqappmail@gmail.com',
+//   to: 'mradul8668@gmail.com',
+//   subject: 'Sending Email using Node.js',
+//   text: `Hi Your login otp is `+val
+//   // html: '<h1>Hi Smartherd</h1><p>Your Messsage</p>'        
+// };
 
 
 
@@ -114,27 +114,51 @@ app.get('/rankings', (request, response) => {
 });
 
 
+// app.post('/otp', (req, res) => {
+//     const data = req.body;
+
+//     // login(data.email).then(res1 => {
+//     //     res.json(res1);
+//     // });
+//     transporter.sendMail({
+//         from: 'mcqappmail@gmail.com',
+//         to: data.email,
+//         subject: 'Sending Email using Node.js',
+//         text: `Hi Your login otp is `+val
+//         // html: '<h1>Hi Smartherd</h1><p>Your Messsage</p>'        
+//       }, function(error, info){
+//         if (error) {
+//           console.log(error);
+//         } else {
+//           console.log('Email sent: ' + info.response);
+//         }
+//     });
+//     res.json({"otp":val});
+// });
+
+
+
+async function login(emailId) {
+    const res = await Auth(emailId);
+
+    let otp = res.OTP;
+    console.log(otp);
+    let status = res.success;
+    return {
+        otp,
+        status
+    };
+}
+
+
+
 app.post('/otp', (req, res) => {
     const data = req.body;
-
-    // login(data.email).then(res1 => {
-    //     res.json(res1);
-    // });
-    transporter.sendMail({
-        from: 'mcqappmail@gmail.com',
-        to: data.email,
-        subject: 'Sending Email using Node.js',
-        text: `Hi Your login otp is `+val
-        // html: '<h1>Hi Smartherd</h1><p>Your Messsage</p>'        
-      }, function(error, info){
-        if (error) {
-          console.log(error);
-        } else {
-          console.log('Email sent: ' + info.response);
-        }
+    login(data.email).then(res1 => {
+        res.json(res1);
     });
-    res.json({"otp":val});
 });
+
 
 
 app.post('/result', (request, response) => {

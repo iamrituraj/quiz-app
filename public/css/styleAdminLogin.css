@@ -7,7 +7,8 @@
 body{
       display:flex;
       justify-content: space-between;
-      background: black;
+      background: url("../img/abc.jpg");
+      
 }
 /* font-family: 'Roboto', sans-serif;
 font-family: 'Oswald', sans-serif; */
@@ -15,7 +16,7 @@ font-family: 'Oswald', sans-serif; */
     display: flex;
     justify-content: center;
     align-items: center;
-   background-color: #FF10F0;
+   background-color: #006b38ff;
    color: white;
     font-family: 'Merienda','Times New Roman', Times, serif;
     width: 40vw;
