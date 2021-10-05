@@ -100,6 +100,7 @@ button {
     font-size: 1.5em;
     background-color: #399ae9;
     color: white;
+    width: 100px;
 }
 
 a {

@@ -147,7 +147,7 @@ app.post('/add_questions2', (request, response) => {
         options: [data.choices[0], data.choices[1], data.choices[2], data.choices[3]],
         correctIndex: data.correctindex,
         user_ques: 10,
-        uid: id1633432845540&u2&q2&t13;
+        uid: 'id1633432845540&u10&q20&t120'
     }
     console.log("Datraga", data1);
     question_pool.insert(data1);
