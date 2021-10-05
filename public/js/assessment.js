@@ -26,7 +26,7 @@ var queryString = decodeURIComponent(window.location.search); //parsing
     queryString = queryString.substring(1);  //querystring: testid=898
     // console.log("querystring",queryString.substr(7,queryString.length));
     var testid=queryString.substr(7,queryString.length);
-
+console.log('test' + testid);
 
 
    
@@ -41,7 +41,7 @@ async function data_request() {
 
 };
 
-let timer = testid.split("&")[3].substr(1,testid.split("&")[3].length);
+let timer = testid.split("&")[2].substr(1,testid.split("&")[2].length);
 
 function interval() {
     let countdown = setInterval(() => {

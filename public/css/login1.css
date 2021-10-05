@@ -91,29 +91,32 @@ img {
     width: 28vw;
 
 }
+
 #admin-button {
     margin: 1em;
-    padding:5px;
-    background-color:#432374;
-    width:9vw;
+    padding: 5px;
+    background-color: #432374;
+    width: 9vw;
     color: white;
-    border: 1px ;
+    border: 1px;
     border-radius: 4px;
-    font-size:1rem;
+    font-size: 1rem;
     cursor: pointer;
 
 }
 
-#start-test-button{
+#start-test-button {
     margin: 1em;
-    padding:5px;
-    background-color:#432374;
-    width:9vw;
+    padding: 10px;
+    background-color: #f2aa4cff;
+    width: 9vw;
     color: white;
-    border: 1px ;
+    border: 1px;
     border-radius: 4px;
-    font-size:1rem;
+    font-size: 1.2rem;
     cursor: pointer;
+    border-radius: 10px;
+
 }
 
 
@@ -123,13 +126,14 @@ label {
 }
 
 input {
-    font-size: 1.3em;
-    
     height: 45px;
     border: 0;
     border-radius: 10px;
     margin: 1.5em;
     padding: 10px;
+    font-size: 20px;
+    outline: none;
+    width: 400px;
 }
 
 input:hover,
@@ -139,22 +143,22 @@ input:active {
     /* border: none !important; */
     /* box-shadow: none; */
     color: black;
+    font-size: 20px;
+    outline: none;
 }
 
 
 #submit-button {
-    background: skyblue;
+    background: #f2aa4cff;
     width: 100px;
     padding: 10px;
     height: 45px;
     font-size: 20px;
     border: 0;
     border-radius: 10px;
+    color: white;
 }
 
-#submit-button:hover {
-    background-color: rgb(86, 191, 223);
-}
 
 /* mobile css */
 

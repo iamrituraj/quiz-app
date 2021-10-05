@@ -30,17 +30,12 @@ const users_score = new Datastore('users_score.json');
 question_pool.loadDatabase();
 users_score.loadDatabase();
 
-
-function randomize(data1) {
+// function to shuffle questions
+function randomize(data1, number_of_ques) {
 
     let questions = [];
     let i = 0;
-    let limit = data1[0].uid;
-    var queries = limit.split("&");
 
-    let number_of_ques = queries[1].substr(1, queries[1].length);
-
-    console.log(queries);
     let num = [];
     for (var ij = 1; ij <= number_of_ques; ij++) {
         num.push(ij);
@@ -59,36 +54,51 @@ function randomize(data1) {
 
 
 
-
+// admin route
 app.get('/admin', (req, res) => {
     res.sendFile(pathADMIN);
 });
 
-
+// get questions.
 app.get('/api/:testid', (request, response) => {
     question_pool.loadDatabase();
     users_score.loadDatabase();
 
-    console.log("Reqfdfa", request.params.testid);
-    question_pool.find({
-        uid: request.params.testid
-    }, (err, data) => {
+    question_pool.find({}, (err, data) => {
         if (err) {
-            console.log("error bhai");
+            console.log(err);
             response.end();
             return;
         }
-        console.log("dotaaaaaaaaaaa", data);
-        response.send(randomize(data));
+        let id = request.params.testid;
+        let string = id.split("&");
+        var limit = string[1].substr(1, string[2].length);
+        response.send(randomize(data, limit));
+
     });
 });
 
 
+// get all questions from question pool
+app.get('/questions', (request, response) => {
+    question_pool.loadDatabase();
+    question_pool.find({}, (err, data) => {
+        if (err) {
+            console.log(err);
+            response.end();
+            return;
+        }
+        response.send(data);
+    });
+});
+
+
+// get result page
 app.get('/result', (req, res) => {
     res.sendFile(pathRESULT);
 });
 
-
+//get rankings of users attempted the test
 app.get('/rankings', (request, response) => {
     users_score.find({}, (err, data) => {
         if (err) {
@@ -99,6 +109,7 @@ app.get('/rankings', (request, response) => {
     });
 });
 
+// function to send otp
 async function login(emailId) {
     const res = await Auth(emailId);
 
@@ -110,6 +121,7 @@ async function login(emailId) {
     };
 }
 
+// sending email to backend for admin verification
 app.post('/otp', (req, res) => {
     const data = req.body;
     login(data.email).then(res1 => {
@@ -117,43 +129,25 @@ app.post('/otp', (req, res) => {
     });
 });
 
-
+// inserting scores to database
 app.post('/result', (request, response) => {
-    console.log("result inside", request.body);
     const data = request.body;
-
     users_score.insert(data);
     response.json(data);
 });
 
-
+//  adding questions to database
 app.post('/add_questions', (request, response) => {
     const data = request.body;
     const data1 = {
         question: data.question,
         options: [data.choices[0], data.choices[1], data.choices[2], data.choices[3]],
         correctIndex: data.correctindex,
-        user_ques: data.user_ques,
-        uid: data.uid
     }
-    console.log("Datraga", data1);
     question_pool.insert(data1);
 });
 
-app.post('/add_questions2', (request, response) => {
-    const data = request.body;
-    const data1 = {
-        question: data.question,
-        options: [data.choices[0], data.choices[1], data.choices[2], data.choices[3]],
-        correctIndex: data.correctindex,
-        user_ques: 10,
-        uid: 'id1633432845540&u10&q20&t120'
-    }
-    console.log("Datraga", data1);
-    question_pool.insert(data1);
-});
-
-
+// server 
 app.listen(PORT, () => {
     console.log(`server running on Port:${PORT}`);
 })

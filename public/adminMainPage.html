@@ -7,22 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Main Page</title>
     <link rel="stylesheet" href="./css/adminMain.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
 </head>
 
 <body id="body">
-    <header>
-        <div class="bgImg">
-<img src="img/ranking.jpg" alt="">
+  
+    <div class="option">
+        <div class="button">
+            <a href="ranking.html" class="ranking">Rankings</a></div>
+        <div><a href="create_test.html" class="add_questions">Create Test </a>
         </div>
-    </header>
-    <main>
-        <div class="option">
-            <a href="ranking.html" class="ranking">Ranking</a>
-            <!-- <a href="add_questions.html" class="add_questions">Add Questions </a> -->
-            <a href="create_test.html" class="add_questions">Create Test </a>
-            <!-- <a href="#" class="create-test">Create Test </a> -->
+        <div><a href="add_questions.html" class="ranking">Add questions</a></div>
+    </div>
+    <div id="table-container">
+        <div id="question-table">
+
         </div>
-    </main>
+    </div>
+
+    <script src="js/adminMainPage.js"></script>
 </body>
 
 </html>

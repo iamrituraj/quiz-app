@@ -1,22 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed&family=Mirza:wght@500&display=swap');
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300&display=swap');
 
 * {
-    font-family: 'IBM Plex Sans Condensed',
+    font-family: 'Noto Sans Display',
         sans-serif;
-    font-family: 'arial',
-        cursive;
 }
 
 
-body{
-
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-background-color: black;
+body {
+    background-size: 100vw 100%;
 }
-.bgImg{
+
+#body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bgImg {
     height: 700px;
     width: 80vw;
     background-size: contain;
@@ -25,46 +27,68 @@ background-color: black;
 
 }
 
+
 img {
     width: 100%;
     height: 100%;
     border-radius: 8%;
 }
-.option{
+
+.option {
+    background-color: transparent;
+    width: 100vw;
+    height: 200px;
     box-sizing: border-box;
     padding-top: 3vw;
     font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 
 }
 
-.option a{
-    text-decoration: none;
-    color:black;
-    background-color:white;
-    margin-left: 2vw;
-    padding: 2vh;
+.option div {
+    width: 200px;
+    height: 50px;
+    background: #f2aa4cff;
+    color: white;
     border-radius: 10px;
+    border: solid white 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.option a {
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    border-radius: 10px;
+    font-size: 25px;
+    font-family: 'Arial',
+        cursive;
 }
 
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 910px) {
 
-.option {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    margin: 10px;
-    padding: 10px;
-}
+    .option {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        margin: 10px;
+        padding: 10px;
+    }
 
-.option a {
+    .option a {
 
-    font-size: 20px;
-    margin: 10px;
-    padding: 10px;
-}
+        font-size: 20px;
+        margin: 10px;
+        padding: 10px;
+    }
 }
 
 
@@ -75,4 +99,45 @@ img {
         height: 200px;
     }
 
+}
+
+
+
+/* question table */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed&family=Mirza:wght@500&display=swap');
+
+
+#table-container {
+    padding: 20px;
+    background-size: 100% 100vh;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#question-table {
+    width: 70%;
+    font-size: 20px;
+    color: white;
+    background: crimson;
+}
+
+thead {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.delete_button {
+    background-color: coral;
+    color: black;
+    width: 80px;
+    height: 40px;
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 10px;
+    outline: none;
+    font-weight: 500;
 }

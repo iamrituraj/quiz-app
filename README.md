@@ -1,63 +1,99 @@
-<hr> 
- 
-## <div align=center><u>MCQs-App</u><br>Walkover-final-assignment</div>
+## ONLINE ASSESSMENT PROJECT
+This is an online assessment platform made by Rituraj Rajput, Aditi Dahare and Ayushi Singh Bhadauria as the final project of walkover University Program. This is a robust online testing platform for conducting remote examinations. This web application is made using HTML5, CSS3, JavaScript,Bootstrap,Bulma as frontend and  Node.js, Express.js as backend and NeDB as database.
 
-#### <u>Intruduction</u>
-This is a web application which is made on top of Node.js and Express.js which provide you a platform to host the Multiple choice questions (MCQs) based online test.<br><br>
- Application provides you to login as a `normal user` or as a `admin`
-> ##### Normal user : `The one who will be giving the online test.` <br> Admin user &nbsp;&nbsp;: `The examiner or the one who wants to host the test.` <br>
+A deployed version can be checked here :  
 
-Admin has following rights :
-- Can login after email OTP verification
-- Create Unique test link
-- Decide number of question to be present in test
-- Create Questions pool (pool maybe greater than number of question in test.)
-- Can see the ranks of candidates who has already completed their test
-- Direct access link for test creation : [Link](https://walkover-mcqs-app.herokuapp.com/create_test.html)
-- Sample test id - id1632238257404&u3&q5&t145
-<hr>
+Demo Video Link:
 
-#### <u>Features Specification</u>
-##### Assigned in Project
-- [x] Assessment shall be MCQ pattern 
-- [x] There must be a question pool for the assessment
-- [x] The questions displayed in the assessment shall be only from that pool
-- [x] Number of questions in the pool shall be more than questions displayed
-- [x] Set a time limit for the assessment (individual timer for a question/optional)
-- [x] Question order shall be shuffled for each candidate appearing
-- [x] Assessment score shall be generated at the time of submission
-##### Additional
-- Easy & Simple UI.
-<hr>
 
-#### <u>Tech Stack</u>
 
-![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)&emsp;![CSS](https://img.shields.io/badge/CSS3-1572D6?style=for-the-badge&logo=css3&logoColor=white)&emsp;![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)&emsp;![NodeJS](https://img.shields.io/badge/Node.js-4853D?style=for-the-badge&logo=node.js&logoColor=white)&emsp;![Express](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)
+## We worked for the following specifications:
+1. Assessment shall be MCQ pattern.✔️
 
-<hr>
+2. There must be a question pool for the assessment.✔️
+   
+   `We have created a pool of 31 questions in database and randomly selected 10 questions in shuffled order.`
+  
+3. The questions displayed in the assessment shall be only from that pool.✔️
 
-#### <u>Contributors</u>
->[Mayank Choudhary](https://github.com/Mayank151c) <br>
->[Mradul Agrawal](https://github.com/mradul098)    <br>
->[Sweeti Gupta](https://github.com/Sweeti-Gupta)   <br>
-<hr>
+4. Number of questions in the pool shall be more than questions displayed.✔️
 
-#### <u>Deployment</u>
-Application is deployed on top of CI/CD pipeline of Heroku platform.
+5. Set a time limit for the assessment (individual timer for a question/optional).✔️ 
 
-| Web-page | Link | 
-|   ----   | ---- |
-| Live Project|[`Click here`](https://walkover-mcqs-app.herokuapp.com/)| 
-| Admin-Login |[`Click here`](https://walkover-mcqs-app.herokuapp.com/adminLogin.html) |
+6. Question order shall be shuffled for each candidate appearing.✔️
 
-<hr>
+7. Assessment score shall be generated at the time of submission.✔️
 
-#### <u>Project Setup</u>
+
+## Admin Panel:
+
+Link of admin Login: 
+
+ - Firstly user have to login to admin panel with valid Email to prove his authenticity.
+ - A OTP will be sent to his Email.
+ - After successfully entering the OTP Admin will be  redirected to a page where  admin have options to see rankings
+     of user attempted the test add questions in Question pool.
+ - After successful login user redirected to results page where he can see results of all users attempted the assessment.
+ - On Rankings page, records of all users displayed with details : `Name` , `Email ID` , `Score`.
+ - The admin can also add new questions to the question pool using add question option.
+ - The admin can Create test by entering no. of questions which will appear in test and time limit for the test.
+ - A unique link and unique id will be generated based on admin's inputs.
+ - Link for test creation : [Link]()
+
+ - Demo TestID - 
+ - Demo Test Link - 
+
+
+## Additional Features: 
+1. Great UI.
+2. Login page for storing user's data and validation of the data of users attempting for assessment.
+3. Result is displayed with Name entered at the time of login.
+4. All users' name and score are displayed at the end using databse table for storing the data and scores of the user.
+
+  
+
+## Pages Functionality:
+
+   `TestID page` - User will Enter the test id and it will be redirected to login Page.
+
+   1. `Login page` - to take the data of users attempting for assessment.
+   2. `Instruction page` - to show the instructions and  rules for assessment. 
+   3. `Question Page` - It will show user questions and options to choose from.
+   4. `Result Page` - After attempting the assessment, in case the user submits or if the user fails to answer all the questions
+                    in the given time duration he/she will be redirected to the result page.
+   5. `Admin login` - admin can login through this page by entering the email and after email verification he/she will be redirected to admin page.
+   6. `Admin Page` - this page will show option to see rankings of user attempted the test and also add question page.
+   7. `Rankings Page` - admin can see rankings of all the user.
+   8. `Create Test Page` - The admin can Create test by entering no. of questions which will appear in test and time limit for the test through    this page.
+   9. `Add Question Page` - admin Can add questions in the question pool through this page.
+
+
+## Developers
+1. Rituraj Rajput [https://github.com/iamrituraj]
+2. Aditi Dahare []
+3. Ayushi Singh Bhadauria [https://github.com/ayushisingh-web-cell]
+
+## Tech Stack Used: 
+1. Frontend -HTML5, CSS3, JavaScript, Ajax and Bootstrap, Bulma.
+2. Backend - Node.js, Express.js (Node.js framework).
+3. Database – NeDB.
+4. For Email verification - two-step-auth.
+
+
+## Deployment
+For Deployment, we have used glitch as a paltform.
+| Live Project|[`Click here`]()| 
+| Admin-Login |[`Click here`]() |
+
+
+## Project Setup: 
+
+**Requirements:** Pre-installed `VS code` with `Node js`.
+
 Steps to setup and run our project locally on your machine
 >1. Install git on your machine if not installed already <br>
->To install [`click here`](https://git-scm.com/downloads) for Windows or <br>Run command `$ sudo apt-get install git` for Linux
 >2. Clone the repository <br>
-`git clone https://github.com/Mayank151c/MCQs_App.git`
+`git clone `
 >
 >3. Go inside the cloned directory on the terminal.
 >4. Install the required packages by command <br>
@@ -66,8 +102,6 @@ Steps to setup and run our project locally on your machine
 >5. Start local-server by command <br>
 `npm start`
 >
->6. Open any browser and access the web application by following link <br>    `http://localhost:3000/`
+>6. Enter the following link in browser, and it will Start the assessment. <br>    `http://localhost:3000/`
 ><br>
->7.In Local System there wont be credentials for mailing the otp so either give personal mail inside nodemailer to check its working or directly visit http://localhost:3000/adminMainPage.html in order to access admin page
-
- 
+>7. Admin Page - http://localhost:3000/adminMainPage.html .

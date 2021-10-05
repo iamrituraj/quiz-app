@@ -1,33 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda&family=Roboto+Slab:wght@300&display=swap');
 
 .img {
-    align-items: center;
-    justify-items: center;
-    margin-left: -30%;
+    position: relative;
+    top: 60px;
+    width: 40vw;
+    height: 60vh;
+    margin-left: 13vw;
+    background-image: url("https://thumbs.dreamstime.com/b/admin-office-binder-wooden-desk-table-colored-pencil-pencils-pen-notebook-paper-79046621.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 4vw;
 }
 
 body {
     display: flex;
     justify-content: space-between;
     background: url("../img/abc.jpg");
-
 }
 
-/* font-family: 'Roboto', sans-serif;
-font-family: 'Oswald', sans-serif; */
 .Feadback {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: transparent;
-    color: white;
     font-family: 'Merienda', 'Times New Roman', Times, serif;
-    width: 40vw;
-    /* height  */
+    width: 49vw;
     margin-top: 7vw;
     margin-right: 5vw;
-    margin-left: 33%;
-    border-radius: 8%;
 }
 
 form h2 {
@@ -35,7 +33,8 @@ form h2 {
     padding-left: 3.5vw;
     margin: auto;
     padding-left: 6vw;
-    font-size: 49px;
+    font-size: 40px;
+    color: white;
 }
 
 .email {
@@ -49,6 +48,7 @@ form h2 {
 .email p {
     margin: 1vh;
     font-size: 32px;
+    color: white;
 }
 
 input[type="text"],
@@ -59,20 +59,19 @@ input[type="int"] {
     width: 20vw;
     padding: 1vh;
     font-size: 30px;
-    font-size: 20px;
     outline: none;
+
 }
 
 .button {
     margin: 1em;
-    padding: 10px;
+    padding: 1vw;
+    width: 10vw;
     background-color: #f2aa4cff;
-    width: 15vw;
     color: white;
     border: 1px;
-    border-radius: 6px;
-    font-size: 1.23rem;
-    cursor: pointer;
+    border-radius: 10px;
+    font-size: 20px;
 }
 
 .function {
@@ -126,5 +125,6 @@ input[type="int"] {
         margin-top: 10px;
         height: 5px;
         width: 75px;
+        outline: none;
     }
 }
