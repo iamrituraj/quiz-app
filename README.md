@@ -1,7 +1,7 @@
 ## ONLINE ASSESSMENT PROJECT
 This is an online assessment platform made by Rituraj Rajput, Aditi Dahare and Ayushi Singh Bhadauria as the final project of walkover University Program. This is a robust online testing platform for conducting remote examinations. This web application is made using HTML5, CSS3, JavaScript,Bootstrap,Bulma as frontend and  Node.js, Express.js as backend and NeDB as database.
 
-A deployed version can be checked here :  
+A deployed version can be checked here :  https://unmarred-dark-harmony.glitch.me/
 
 Demo Video Link:
 
@@ -12,7 +12,7 @@ Demo Video Link:
 
 2. There must be a question pool for the assessment.✔️
    
-   `We have created a pool of 31 questions in database and randomly selected 10 questions in shuffled order.`
+   `We have created a pool of 20 questions in database and randomly selected 5 questions in shuffled order.`
   
 3. The questions displayed in the assessment shall be only from that pool.✔️
 
@@ -27,7 +27,7 @@ Demo Video Link:
 
 ## Admin Panel:
 
-Link of admin Login: 
+Link of admin Login: https://unmarred-dark-harmony.glitch.me/adminLogin.html
 
  - Firstly user have to login to admin panel with valid Email to prove his authenticity.
  - A OTP will be sent to his Email.
@@ -38,10 +38,9 @@ Link of admin Login:
  - The admin can also add new questions to the question pool using add question option.
  - The admin can Create test by entering no. of questions which will appear in test and time limit for the test.
  - A unique link and unique id will be generated based on admin's inputs.
- - Link for test creation : [Link]()
 
- - Demo TestID - 
- - Demo Test Link - 
+ - Demo TestID - id1633432845540&u5&t120
+ - Demo Test Link - https://unmarred-dark-harmony.glitch.me//teststart.html?testid=id1633432845540&u5&t120
 
 
 ## Additional Features: 
@@ -82,8 +81,8 @@ Link of admin Login:
 
 ## Deployment
 For Deployment, we have used glitch as a paltform.
-| Live Project|[`Click here`]()| 
-| Admin-Login |[`Click here`]() |
+| Live Project|[`Click here`](https://unmarred-dark-harmony.glitch.me/)| 
+| Admin-Login |[`Click here`](https://unmarred-dark-harmony.glitch.me/adminLogin.html) |
 
 
 ## Project Setup: 
@@ -93,7 +92,7 @@ For Deployment, we have used glitch as a paltform.
 Steps to setup and run our project locally on your machine
 >1. Install git on your machine if not installed already <br>
 >2. Clone the repository <br>
-`git clone `
+`git clone   https://github.com/iamrituraj/quiz-app.git`
 >
 >3. Go inside the cloned directory on the terminal.
 >4. Install the required packages by command <br>
@@ -102,6 +101,6 @@ Steps to setup and run our project locally on your machine
 >5. Start local-server by command <br>
 `npm start`
 >
->6. Enter the following link in browser, and it will Start the assessment. <br>    `http://localhost:3000/`
+>6. Enter the following link in browser, and it will should open the Testid Page. <br>    `http://localhost:3000/`
 ><br>
 >7. Admin Page - http://localhost:3000/adminMainPage.html .
