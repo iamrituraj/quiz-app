@@ -1,11 +1,9 @@
 {"question":"In object-oriented programming, the process by which one object acquires the properties of another object is called","options":["Encapsulation","Inheritance","Overriding","Polymorphism"],"correctIndex":2,"_id":"1WuAuiwzN4HuyvHv"}
 {"question":"In Java, a try block should immediately be followed by one or more ________ blocks.","options":["Throw","Run","Exit","Catch"],"correctIndex":4,"_id":"3LxwtiKAdr2QcmXU"}
-{"question":"what is the df","options":["d","g","g","g"],"correctIndex":"1","_id":"3Nwq1Ka99vUzhuOJ"}
 {"question":"What is 48,879 in hexidecimal?","options":["0x18C1","0xBEEF","0xDEAD","0x12D591"],"correctIndex":1,"_id":"44xWS9QxBFT81Z45"}
 {"question":"The default value of a static integer variable of a class in Java is,","options":["0","1","Garbage value","null"],"correctIndex":1,"_id":"94AdoUw5BG7GVpEd"}
 {"question":"When did The Avengers come out?","options":["May 2, 2008","May 4, 2012","May 3, 2013","April 4, 2014"],"correctIndex":1,"_id":"C7GaPqpYXfDrfg5X"}
 {"question":"What is 65 times 52?","options":["117","3120","3380","3520"],"correctIndex":2,"_id":"GsT2dShjRPxJyWHJ"}
-{"question":"ddddddddd","options":["d","g","g","g"],"correctIndex":"2","_id":"HKkw4onnywdZ0Wm3"}
 {"question":"________ are used to document a program and improve its readability.","options":["Comments","Blocks","Control structures","Keywords"],"correctIndex":1,"_id":"I7HCzfsqlft757YA"}
 {"question":"All exception types are subclasses of the built-in class","options":["Exception","RuntimeException","Error","Throwable"],"correctIndex":4,"_id":"IXHy9zThkXl6z4mi"}
 {"question":"What is the scientific name of a butterfly?","options":["Apis","Coleoptera","Formicidae","Rhopalocera"],"correctIndex":3,"_id":"K1C1ByJACpw1TSWw"}
