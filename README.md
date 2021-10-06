@@ -53,8 +53,6 @@ Link of admin Login: http://walkoverquizapp-env.eba-naqqkjp9.us-east-2.elasticbe
 
 ## Pages Functionality:
 
-   `TestID page` - User will Enter the test id and it will be redirected to login Page.
-
    1. `Login page` - to take the data of users attempting for assessment.
    2. `Instruction page` - to show the instructions and  rules for assessment. 
    3. `Question Page` - It will show user questions and options to choose from.
