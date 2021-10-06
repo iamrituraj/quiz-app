@@ -14,7 +14,6 @@ async function question_delete(question) {
 
     const response = await fetch('/question_delete', options);
     const json = await response.json();
-    console.log("45")
 }
 
 question_delete("what");
@@ -93,7 +92,6 @@ function compare(a, b) {
     let nrb = b.score.split("/")[0];
     let drb = b.score.split("/")[1];
 
-    console.log(nra / drb, nrb / drb);
     if (nra / dra > nrb / drb) {
         return -1;
     } else {
@@ -105,7 +103,6 @@ function compare(a, b) {
 async function data_request() {
     const response = await fetch('/questions');
     let json = await response.json();
-    console.log(json)
     set_data(json);
 };
 

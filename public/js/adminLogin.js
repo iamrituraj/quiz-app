@@ -1,9 +1,15 @@
-let correctotp;
+function clear_input() {
+    document.getElementById('admin_email').value = "";
+    document.getElementById('admin_otp').value = "";
+}
 
+clear_input();
+
+
+let correctotp;
 
 function otp_set(otp) {
     correctotp = otp;
-    console.log(correctotp);
 }
 
 async function email_send(email) {

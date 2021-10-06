@@ -4,7 +4,6 @@ const path = require('path');
 const Datastore = require('nedb');
 const {Auth} = require("two-step-auth");
 
-// var val = Math. floor(1000 + Math. random() * 9000);
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -28,6 +27,7 @@ const users_score = new Datastore('users_score.db');
 question_pool.loadDatabase();
 users_score.loadDatabase();
 
+
 // function to shuffle questions
 function randomize(data1, number_of_ques) {
 
@@ -35,10 +35,9 @@ function randomize(data1, number_of_ques) {
     let i = 0;
 
     let num = [];
-    for (var ij = 1; ij <= number_of_ques; ij++) {
+    for (var ij = 1; ij <= data1.length; ij++) {
         num.push(ij);
     }
-    // let num = range(0,10)//, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30];
 
     while (i < number_of_ques) {
         let random = Math.floor(Math.random() * num.length)

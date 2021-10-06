@@ -15,14 +15,15 @@
             <div class="section1">
                 <p id="heading">Instructions</p>
                 <ol>
-                    <li id="timelimit">Total duration of test is 180 seconds.</li>
-                    <li>Test comprise of MCQs only.</li>
-                    <li id="eachque">Each question is of 1 Mark.</li>
-                     <li>No Negative Marking.</li>
-                    <li> There will be only 10 questions.</li>
-                    <li>To start the test click on "Start" button.</li>
+                    <!--  -->
+                    <li>The test comprises of multiple choice questions (MCQ).</li>
+                    <li id="eachque">The test consist of 10 questions.</li>
+                    <li id="timelimit">The total time duration for test is 100 seconds.</li>
                     <li>Once the time is finished, test will be submitted automatically.</li>
-                    <li>You can see your score at the time of submission.</li>
+                    <li>All the questions are of 1 point each and there is NO negative marking.</li>
+                    <li>Read the questions carefully.</li>
+                    <li>To start, click the "Start Test" button. When finished, click the "Submit" button.</li>
+                    <li>You will get the test result at the time of submission.</li>
                 </ol>
                 <div class="wish-text">
 
@@ -39,8 +40,8 @@
 
         var queryString = decodeURIComponent(window.location.search); //parsing
         queryString = queryString.substring(1);
-        document.getElementById("eachque").innerHTML="There will be only "+queryString.split("&")[1].substr(1,queryString.split("&")[1].length)+" questions.";
-        document.getElementById("timelimit").innerHTML="Total duration of this test is "+queryString.split("&")[2].substr(1,queryString.split("&")[2].length);
+        document.getElementById("eachque").innerHTML="The test consist of "+queryString.split("&")[1].substr(1,queryString.split("&")[1].length)+" questions.";
+        document.getElementById("timelimit").innerHTML="The total time duration for test is "+ queryString.split("&")[2].substr(1,queryString.split("&")[2].length) +" seconds.";
         document.getElementById("starttest").onclick=function(){
 
         window.location.href = "assessment-page.html?"+queryString;

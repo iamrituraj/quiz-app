@@ -1,13 +1,3 @@
-// document.getElementById("submit-button").addEventListener("submit",function(e){
-//     handlesubmitbutton(e);
-//     console.log("fsdsfd",e);
-// })
-
-// function handlesubmitbutton(event){
-//     event.preventDefault();
-//     console.log("addquestionloop");
-//     // window.location.href = "/addquestionloop.html";
-// }
 
 document.getElementById("submit-button").onclick = function (event) {
     let value2 = document.getElementById('number_of_que_user').value;
@@ -15,10 +5,7 @@ document.getElementById("submit-button").onclick = function (event) {
     let value3='id' + (new Date()).getTime();
 
     event.preventDefault();
-    console.log("hola");
-    // var value1="foo"; 
-// var value2="bar"; 
+   
     var queryString = "?id=" + value3 + "&u" + value2 + "&t" + value4;
-    console.log(queryString);
     location.href = "/test_id.html"+queryString;
 };

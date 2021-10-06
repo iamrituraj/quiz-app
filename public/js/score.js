@@ -10,10 +10,6 @@ sessionStorage.removeItem("score");
 sessionStorage.removeItem("email");
 
 
-
-
-console.log(score)
-
 var queryString = decodeURIComponent(window.location.search);
 queryString2 = queryString.substring(1).substr(1,queryString.substring(1).length);
 
@@ -40,11 +36,9 @@ const options = {
 
 async function data_send() {
     const response = await fetch('/result', options);
-    console.log('hi');
     const json = await response.json();
-    console.log(json);
 }
-console.log("username",username,"email",email,"score",score);
+
 if (username && email) {
     data_send();
 }

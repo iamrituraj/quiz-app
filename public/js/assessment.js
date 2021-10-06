@@ -3,10 +3,8 @@ var score = 0;
 
 var queryString = decodeURIComponent(window.location.search); //parsing 
 queryString = queryString.substring(1).substr(7,queryString.substr(1).length); 
-console.log(queryString);
 var string2=queryString.split("&");
 var limit = string2[1].substr(1,string2[2].length);
-console.log(limit);
 
 //    window.location.href = "assessment-page.html?"+queryString;
 
@@ -24,13 +22,7 @@ var resultCont = document.getElementById("result");
 
 var queryString = decodeURIComponent(window.location.search); //parsing 
     queryString = queryString.substring(1);  //querystring: testid=898
-    // console.log("querystring",queryString.substr(7,queryString.length));
     var testid=queryString.substr(7,queryString.length);
-console.log('test' + testid);
-
-
-   
-
 
 let questions;
 

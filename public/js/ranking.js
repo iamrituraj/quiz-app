@@ -81,7 +81,6 @@ function compare(a, b) {
     let nrb=b.score.split("/")[0];
     let drb=b.score.split("/")[1];
 
-    console.log(nra/drb,nrb/drb);
     if (nra/dra > nrb/drb) {
         return -1;
     }

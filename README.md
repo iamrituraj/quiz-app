@@ -1,10 +1,9 @@
 ## ONLINE ASSESSMENT PROJECT
 This is an online assessment platform made by Rituraj Rajput, Aditi Dahare and Ayushi Singh Bhadauria as the final project of walkover University Program. This is a robust online testing platform for conducting remote examinations. This web application is made using HTML5, CSS3, JavaScript,Bootstrap,Bulma as frontend and  Node.js, Express.js as backend and NeDB as database.
 
-A deployed version can be checked here :  https://unmarred-dark-harmony.glitch.me/
+A deployed version can be checked here :  http://walkoverquizapp-env.eba-naqqkjp9.us-east-2.elasticbeanstalk.com//index.html?testid=id1633432845540&u5&t120
 
 Demo Video Link:
-
 
 
 ## We worked for the following specifications:
@@ -27,7 +26,7 @@ Demo Video Link:
 
 ## Admin Panel:
 
-Link of admin Login: https://unmarred-dark-harmony.glitch.me/adminLogin.html
+Link of admin Login: http://walkoverquizapp-env.eba-naqqkjp9.us-east-2.elasticbeanstalk.com/adminLogin.html
 
  - Firstly user have to login to admin panel with valid Email to prove his authenticity.
  - A OTP will be sent to his Email.
@@ -39,8 +38,7 @@ Link of admin Login: https://unmarred-dark-harmony.glitch.me/adminLogin.html
  - The admin can Create test by entering no. of questions which will appear in test and time limit for the test.
  - A unique link and unique id will be generated based on admin's inputs.
 
- - Demo TestID - id1633432845540&u5&t120
- - Demo Test Link - https://unmarred-dark-harmony.glitch.me//teststart.html?testid=id1633432845540&u5&t120
+ - Demo Test Link - http://walkoverquizapp-env.eba-naqqkjp9.us-east-2.elasticbeanstalk.com//index.html?testid=id1633432845540&u5&t120
 
 
 ## Additional Features: 
@@ -69,7 +67,7 @@ Link of admin Login: https://unmarred-dark-harmony.glitch.me/adminLogin.html
 
 ## Developers
 1. Rituraj Rajput [https://github.com/iamrituraj]
-2. Aditi Dahare []
+2. Aditi Dahare [https://github.com/Aditi-1111]
 3. Ayushi Singh Bhadauria [https://github.com/ayushisingh-web-cell]
 
 ## Tech Stack Used: 
@@ -80,9 +78,13 @@ Link of admin Login: https://unmarred-dark-harmony.glitch.me/adminLogin.html
 
 
 ## Deployment
-For Deployment, we have used glitch as a paltform.
-| Live Project|[`Click here`](https://unmarred-dark-harmony.glitch.me/)| 
-| Admin-Login |[`Click here`](https://unmarred-dark-harmony.glitch.me/adminLogin.html) |
+
+## Deployment:
+For Deployment, we have used `Amazon AWS Cloud` as a platform. 
+
+The application is hosted on an `Elastic Beanstalk` environment.
+| Live Project|[`Click here`](http://walkoverquizapp-env.eba-naqqkjp9.us-east-2.elasticbeanstalk.com//index.html?testid=id1633432845540&u5&t120)| 
+| Admin-Login |[`Click here`](http://walkoverquizapp-env.eba-naqqkjp9.us-east-2.elasticbeanstalk.com/adminLogin.html) |
 
 
 ## Project Setup: 

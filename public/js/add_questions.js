@@ -34,10 +34,8 @@ function handleLoginSubmit(event) {
     clear_input();
     alert("Question added successfully.");
     question_send(question, options, correctindex);
-    console.log('kl')
 
 }
-
 
 
 (function () {
