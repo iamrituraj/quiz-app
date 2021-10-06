@@ -2,9 +2,7 @@
 const express = require('express');
 const path = require('path');
 const Datastore = require('nedb');
-const {
-    Auth
-} = require("two-step-auth");
+const {Auth} = require("two-step-auth");
 
 // var val = Math. floor(1000 + Math. random() * 9000);
 
@@ -24,8 +22,8 @@ app.use(express.json({
 }));
 
 
-const question_pool = new Datastore('question_pool.json');
-const users_score = new Datastore('users_score.json');
+const question_pool = new Datastore('question_pool.db');
+const users_score = new Datastore('users_score.db');
 
 question_pool.loadDatabase();
 users_score.loadDatabase();
