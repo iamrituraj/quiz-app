@@ -73,7 +73,7 @@ function loadNextQuestion() {
     }
     //Comparing the answer value, if true add 1 to the score
     var answer = selectedOption.value;
-    if (questions[currentQuestion].correctIndex == answer) {
+    if (questions[currentQuestion].correctIndex == answer-1) {
         score += 1;
     }
 
