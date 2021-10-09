@@ -27,7 +27,7 @@ var queryString = decodeURIComponent(window.location.search); //parsing
 let questions;
 
 async function data_request() {
-    const response = await fetch('/api/'+testid);
+    const response = await fetch('/api/' + testid);
     let json = await response.json();
     set_question(json);
 

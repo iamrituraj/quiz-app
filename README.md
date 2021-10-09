@@ -77,8 +77,6 @@ Link of admin Login: http://walkoverquizapp-env.eba-naqqkjp9.us-east-2.elasticbe
 4. For Email verification - two-step-auth.
 
 
-## Deployment
-
 ## Deployment:
 For Deployment, we have used `Amazon AWS Cloud` as a platform. 
 
@@ -86,23 +84,40 @@ The application is hosted on an `Elastic Beanstalk` environment.
 | Live Project|[`Click here`](http://walkoverquizapp-env.eba-naqqkjp9.us-east-2.elasticbeanstalk.com//index.html?testid=id1633432845540&u5&t120)| 
 | Admin-Login |[`Click here`](http://walkoverquizapp-env.eba-naqqkjp9.us-east-2.elasticbeanstalk.com/adminLogin.html) |
 
+## CI/CD setup
+1. Create a GitHub repository. You may initialize it with a README, license, .gitignore
+2. Install git via terminal 
+
+   (On Ubuntu you can do `sudo apt-get install git`)
+3. Then do a git clone of your repository, or simply download the zip file of your repository from GitHub and extract it.
+4. Copy your project in the new folder created after cloning (its name will be same to that of the repository you cloned).
+5. Add all the changes you want.
+6. Then execute these commands:
+   
+   ````
+   git add . 
+
+   git commit -m "[mandatory commit message]" 
+   
+   git push [url to your repository] master/main 
+7. Now your commit will be successfully pushed to the main branch of your GitHub repository.
 
 ## Project Setup: 
 
 **Requirements:** Pre-installed `VS code` with `Node js`.
 
 Steps to setup and run our project locally on your machine
->1. Install git on your machine if not installed already <br>
->2. Clone the repository <br>
+1. Install git on your machine if not installed already <br>
+2. Clone the repository <br>
 `git clone   https://github.com/iamrituraj/quiz-app.git`
 >
->3. Go inside the cloned directory on the terminal.
->4. Install the required packages by command <br>
+3. Go inside the cloned directory on the terminal.
+4. Install the required packages by command <br>
 `npm install`
 >
->5. Start local-server by command <br>
+5. Start local-server by command <br>
 `npm start`
 >
->6. Enter the following link in browser, and it will should open the Testid Page. <br>    `http://localhost:3000//index.html?testid=id1633432845540&u5&t120`
+6. Enter the following link in browser, and it will should open the Testid Page. <br>    http://localhost:3000//index.html?testid=id1633432845540&u5&t120
 ><br>
->7. Admin Page - http://localhost:3000/adminMainPage.html .
+7. Admin Page - http://localhost:3000/adminMainPage.html .
