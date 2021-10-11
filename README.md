@@ -47,7 +47,10 @@ Link of admin Login: http://walkoverquizapp-env.eba-naqqkjp9.us-east-2.elasticbe
 1. Great UI.
 2. Login page for storing user's data and validation of the data of users attempting for assessment.
 3. Result is displayed with Name entered at the time of login.
-4. All users' name and score are displayed at the end using databse table for storing the data and scores of the user.
+4. All users' name and score are displayed at the end using database table for storing the data and scores of the user.
+5. All the questions are displayed on admin main page.
+6. Admin can login using Email with otp verification.
+7. Admin can select no. of questions and time limit for the test and share the generated link for the particular test.
 
   
 
